@@ -8,7 +8,7 @@ Use nvidia-docker inside a container.
 
 ## Building image
 
-You can either pull the image `henderake/dind-nvidia-docker` or build the image by yourself with the following command:  
+You can either pull the image `henderake/dind:nvidia-docker` or build the image by yourself with the following command:  
 ```shell
   $ nvidia-docker build -t dind:nvidia-docker .
 ```

@@ -28,8 +28,8 @@ The usage of the container is the same as the [official dind image](https://hub.
 Here is an example.
 First, run the container on the host machine.
 ```shell
-  $ DIND=$(sudo docker run --privileged -d --runtime=nvidia dind:nvidia-docker)
-  $ sudo docker exec -it $DIND /bin/bash
+  $ DIND=$(docker run --privileged -d --runtime=nvidia dind:nvidia-docker)
+  $ docker exec -it $DIND /bin/bash
 ```
 Now we have a shell in the dind container. Inside this container, you can run any container that requires `nvidia` runtime.
 
